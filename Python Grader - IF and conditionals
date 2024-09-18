@@ -1,0 +1,22 @@
+def calculate_grade(points_achieved, total_points):  
+    if total_points == 0:  
+        return "Error you can't have the total points be 0."  
+      
+    percentage = (points_achieved / total_points) * 100  
+      
+    if 0 <= percentage <= 50:  
+        return "F"  
+    elif 51 <= percentage <= 60:  
+        return "D"  
+    elif 61 <= percentage <= 75:  
+        return "C"  
+    elif 76 <= percentage <= 88:  
+        return "B"  
+    elif 89 <= percentage <= 100:  
+        return "A"  
+   
+total_points = 100    
+points_achieved = 100
+  
+grade = calculate_grade(points_achieved, total_points)  
+print(f"The student's grade is: {grade}")  
